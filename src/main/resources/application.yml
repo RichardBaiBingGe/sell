@@ -1,0 +1,30 @@
+spring:
+       datasource:
+           driver-class-name: com.mysql.jdbc.Driver
+           username: root
+           password: root
+           url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=false
+       jpa:
+         show-sql: true
+       jackson:
+         default-property-inclusion: non_null
+server:
+  context-path: /sell
+  port: 8080
+
+wechat:
+       mpAppId: 123
+       mpAppSecreet: 123
+       mchId: 123
+       mchKey: 123
+       keyPath: 123
+       notifyUrl: 123
+
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  #path会输出默认的文件名“spring.log” file则会输出到指定的路径并且会输出定义好的文件名
+#  #path: D:\Sell log\
+#  file: D:\Sell log\sell.log
+#  #level: debug
+#  level: com.authLoggerTest :debug
